@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body style="background-color: #671aa4;">
+        <form action='{{ url_for("get_food_item")}}' method="POST" style="padding: 80px;">
+
+              <div class="form-group">
+                <label for="name" style="color: white;">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="age" style="color: white;">Age</label>
+                <input type="text" class="form-control" id="age" placeholder="age">
+              </div>
+              <div class="form-group">
+                <label for="weight" style="color: white;">Weight</label>
+                <input type="text" class="form-control" id="weight" placeholder="weight">
+              </div>
+              <div class="form-group">
+                <label for="height" style="color: white;">Height</label>
+                <input type="text" class="form-control" id="height" placeholder="height">
+              </div>
+              
+              
+
+            <!-- <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="age">Age</label>
+            <input type="text" id="age" name="age"><br><br>
+            <label for="weight">Weight</label>
+            <input type="text" id="weight" name="weight"><br><br>
+            <label for="height">Height</label>
+            <input type="text" id="height" name="height"><br><br> -->
+
+            <!-- <label for="lifestyle">Desired Lifestyle</label>
+            <select class="selectpicker" data-live-search="true" name="lifestyle">
+                {% for lf_style in data["lifestyle"] %}
+                <option value= "{{ lf_style }}" >{{ lf_style }}</option>"
+                {% endfor %}    
+            </select> -->
+
+            <label for="lifestyle" style="color: white;">Desired Lifestyle</label>
+            <select class="selectpicker" data-live-search="true" name="lifestyle">
+                {% for lf_style in data["lifestyle"] %}
+                <option value= "{{ lf_style }}" data-tokens="{{ lf_style }}" >{{ lf_style }}</option>"
+                {% endfor %}
+              </select>
+
+            <!-- <label for="disease_to_avoid">Diseases to avoid</label>
+            <select name="disease_to_avoid">
+                {% for d_avoid in data["diseases_to_avoid"] %}
+                <option value= "{{ d_avoid }}" >{{ d_avoid }}</option>"
+                {% endfor %}    
+            </select> -->
+
+            <label for="disease_to_avoid" style="color: white;">Diseases to avoid</label>
+            <select class="selectpicker" data-live-search="true" name="disease_to_avoid">
+                {% for d_avoid in data["diseases_to_avoid"] %}
+                <option value= "{{ d_avoid }}" data-tokens="{{ d_avoid }}" >{{ d_avoid }}</option>"
+                {% endfor %}    
+            </select>
+
+            <br><br>
+
+            <!-- <input type="submit" value="Submit"> -->
+
+            <button type="submit" class="btn btn-primary" style="align-self: center;position:relative; background-color: white;color: black;">Submit</button>
+        </form>
+    </body>
+</html>
