@@ -3,7 +3,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
     <body style="background-color: #671aa4;">
-        <form action='{{ url_for("get_food_item")}}' method="POST" style="padding: 80px;">
+        <form action='{{ url_for("get_food_item")}}' method="POST" style="padding-top: 40px;padding-left: 60px;padding-right: 60px">
 
               <div class="form-group">
                 <label for="name" style="color: white;">Name</label>
@@ -41,6 +41,7 @@
             </select> -->
 
             <label for="lifestyle" style="color: white;">Desired Lifestyle</label>
+            <br>
             <select class="selectpicker" data-live-search="true" name="lifestyle">
                 {% for lf_style in data["lifestyle"] %}
                 <option value= "{{ lf_style }}" data-tokens="{{ lf_style }}" >{{ lf_style }}</option>"
@@ -54,7 +55,10 @@
                 {% endfor %}    
             </select> -->
 
+            <br><br>
+
             <label for="disease_to_avoid" style="color: white;">Diseases to avoid</label>
+            <br>
             <select class="selectpicker" data-live-search="true" name="disease_to_avoid">
                 {% for d_avoid in data["diseases_to_avoid"] %}
                 <option value= "{{ d_avoid }}" data-tokens="{{ d_avoid }}" >{{ d_avoid }}</option>"

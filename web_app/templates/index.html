@@ -51,17 +51,30 @@
     
 </head>
 
-<body>
-    <form name="Item_1" action='{{ url_for("get_recommendations")}}' method="POST">
-        <label for="exampleFormControlFile2">Choose food item</label>
+<body style="background-color: #671aa4;">
+    <form name="Item_1" action='{{ url_for("get_recommendations")}}' method="POST" style="padding-top: 60px;padding-left: 60px;padding-right: 60px">
+        <!-- <label for=">Choose food item</label>
           <select name="food_item">
             {% for fi in data["food_items"] %}
             <option value= "{{ fi }}" >{{ fi }}</option>"
             {% endfor %}    
-          </select>
+          </select> -->
 
-          <input type="submit" value="Submit">
+          <br>
+          <h3 style="text-align: center"><label for="food_items" style="color: white;">Choose food item</label></h3>
+          <br><br>
+            <select class="selectpicker" data-live-search="true" name="food_item" style="width:100%;align:center">
+                {% for fi in data["food_items"] %}
+                <option value= "{{ fi }}" data-tokens="{{ fi }}" >{{ fi }}</option>"
+                {% endfor %}    
+            </select>
+
+            <br><br>
+
+            <button type="submit" class="btn btn-primary" style="align-self: center;position:relative; background-color: white;color: black;">Submit</button>
       </form>
     
 </body>
+
+</html>
 

@@ -46,11 +46,14 @@ def get_recommendations():
 
     _, _, _, restrictions = recommendation(food_item_selected,disease_to_avoid_selected)
 
+    images = ["static/nutcase_vegan.jpeg","static/sardines.jpeg","static/radi.jpeg","static/moz.jpeg","static/upma.jpeg"]
+
     return render_template('results_page.html', data={"food_i_selected":food_item_selected, 
                                                         "lifestyle_selected":lifestyle_selected,
                                                         "disease_to_avoid" : disease_to_avoid_selected,
                                                         "df_ans" : df_ans,
-                                                        "restrictions":restrictions
+                                                        "restrictions":restrictions,
+                                                        "images":images
                                                         })
 
 if __name__ == '__main__':
