@@ -1,0 +1,12 @@
+sklearn
+scipy
+numpy
+matplotlib.pyplot
+pandas
+statistics
+math
+beautifulsoup4
+cdifflib
+requests
+flask
+
