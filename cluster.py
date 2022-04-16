@@ -5,10 +5,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = pd.read_csv('final.csv')
+data = pd.read_csv('result.csv')
 X = preprocessing.normalize(data.drop(columns=['Category']))
 
-best_k = 15
+best_k = 10
 
 best_kmeans_model = KMeans(n_clusters=best_k, random_state=3).fit(X)
 kmeans_labels = best_kmeans_model.labels_

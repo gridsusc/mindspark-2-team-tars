@@ -1,11 +1,12 @@
 from sklearn.cluster import KMeans
-from sklearn import metrics, preprocessing
+from sklearn import preprocessing
 from scipy.spatial.distance import cdist
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = pd.read_csv('final.csv')
+data = pd.read_csv('result.csv')
+print(data.columns)
 X = preprocessing.normalize(data.drop(columns=['Category']))
 
 distortions = []
