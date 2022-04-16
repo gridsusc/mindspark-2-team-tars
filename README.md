@@ -3,7 +3,7 @@
 ### Folder: web_app
 Function: Flask Web App
 
-<img src="images/image(5).png" width="200" height="400">
+<img src="images/image(5).png" width="600" height="200">
 <img src="images/image(1).png">
 <img src="images/image(2).png">
 <img src="images/image(3).png">
