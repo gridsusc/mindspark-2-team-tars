@@ -3,6 +3,9 @@
 ### Folder: web_app
 Function: Flask Web App
 
+<img src="images/image(1)" alt="Alt text" title="Food Choice">
+
+
 ### File: cluster.py
 Input: result.csv (Food Nutition Dataset)
 Output: clustered_data.csv (Clustered Food Items using KMeans)
