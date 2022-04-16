@@ -3,8 +3,11 @@
 ### Folder: web_app
 Function: Flask Web App
 
-<img src="images/image(1).png" alt="Alt text" title="Food Choice" max-width= "50px">
-
+<img src="images/image(1).png">
+<img src="images/image(2).png">
+<img src="images/image(3).png">
+<img src="images/image(4).png">
+<img src="images/image(5).png">
 
 ### File: cluster.py
 Input: result.csv (Food Nutition Dataset)
