@@ -3,7 +3,7 @@
 ### Folder: web_app
 Function: Flask Web App
 
-<img src="images/image(1).png" alt="Alt text" title="Food Choice" max-width= 100px>
+<img src="images/image(1).png" alt="Alt text" title="Food Choice" max-width= 50px>
 
 
 ### File: cluster.py
