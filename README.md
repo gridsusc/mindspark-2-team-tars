@@ -3,7 +3,7 @@
 ### Folder: web_app
 Function: Flask Web App
 
-<img src="images/image(1)" alt="Alt text" title="Food Choice">
+<img src="images/image(1).png" alt="Alt text" title="Food Choice">
 
 
 ### File: cluster.py
